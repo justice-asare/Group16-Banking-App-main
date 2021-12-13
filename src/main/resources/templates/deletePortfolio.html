@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Delete Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container text-center">
+  <form action="http://localhost:8080/login/client/delete-portfolio?id=?"
+        method="delete"  modelAttribute="portfolio"   style="max-width: 600px; margin: 0 auto;" name="portfolio">
+    <div class="m-3">
+      <div class="form-group row">
+        <label class="col-4 col-form-label">Portfolio ID: </label>
+        <div class="col-8">
+          <input type="number" name="id" class="form-control" required />
+        </div>
+      </div>
+      <div>
+        <button type="submit" >Delete</button>
+
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>

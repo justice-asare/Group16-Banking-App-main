@@ -1,0 +1,10 @@
+package com.trade.bankapp.order;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface OrderRepo extends JpaRepository<Order,Long> {
+    Order findOrderByToken(String token);
+    Order findOrderByUsername(String username);
+}
